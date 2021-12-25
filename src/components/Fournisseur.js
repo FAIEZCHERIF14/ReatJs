@@ -5,7 +5,7 @@ export default class Fournisseur extends Component {
     constructor(){
         super()
         this.state={
-            listFourn:[]
+            listFour:[]
         }
     }
     deleteFournisseur=(fournId)=>{
@@ -14,7 +14,7 @@ export default class Fournisseur extends Component {
           if(response.data !=null){
             
             this.setState({
-                listFourn:this.state.colis.filter(fourn=> fourn.id !==fournId)
+                listFour:this.state.colis.filter(fourn=> fourn.id !==fournId)
             })
           }
         })
@@ -47,7 +47,7 @@ export default class Fournisseur extends Component {
   <tbody>
     {
       
-      this.state.listFourn.map((four)=> (
+      this.state.listFour.map((four)=> (
         <tr key={four.id}>
           
           <td>{four.name}</td>
