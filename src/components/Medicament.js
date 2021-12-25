@@ -42,7 +42,7 @@ export default class Medicament extends Component {
       <th scope="col">Ville</th>
       <th scope="col">Adresse</th>
       <th scope="col">Prix</th>
-      <th scope="col">Etat</th>
+    
     </tr>
   </thead>
   <tbody>
